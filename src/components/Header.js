@@ -7,16 +7,20 @@ const Header = (props) => {
     return (
         <Container>
             <Content>
+                
                 <Logo>
-                    <a href="/home">
-                       
-                    </a>
+                   
+                    <a href="/"style={{ textDecoration: 'none' }}>
+                <h1 style={{fontFamily: 'Lobster', fontSize:"26px",textShadow:"2px 2px 3px black",
+                marginLeft:"40px",
+                marginTop:"3.8px",color:"white"}}>ST-AN</h1>
+            </a>
                 </Logo>
                 
 
                 <Search>
                     <div>
-                        <input type="text" placeholder="Search" />
+                        {/* <input type="text" placeholder="Search" /> */}
                     </div>
                     {/* <SearchIcon>
                         <img src="/images/search-icon.svg" alt="" />
@@ -28,15 +32,15 @@ const Header = (props) => {
                         <NavList className="active">
                             <a>
                                 <img src="/images/nav-home.svg" alt="" />
-                                <span>Home</span>
+                                <span style={{color:"white",textDecoration:"none",fontWeight:"bolder"}}>Home</span>
                             </a>
                         </NavList>
 
                     
                         <NavList>
                             <a>
-                                <img src="/images/nav-messaging.svg" alt="" />
-                                <Link to="/chat" style={{textDecoration:"none"}}><span>Messaging</span></Link>
+                                <img src="/images/nav-messaging.svg" alt=""  style={{position:"relative", top:'13px'}}/>
+                                <Link to="/chat" style={{textDecoration:"none"}}><span style={{color:"white",fontWeight:"bolder"}}>Messaging</span></Link>
                             </a>
                         </NavList>
                         <NavList>
@@ -55,7 +59,7 @@ const Header = (props) => {
                                             <img src="/images/user.svg" />
                                         )
                                 }
-                                <span>
+                                <span style={{color:"white",fontWeight:"bolder"}}>
                                     Me <img src="/images/down-icon.svg" alt="" />
                                 </span>
                             </a>
@@ -84,6 +88,7 @@ const Container = styled.div`
     position: fixed;
     width: 100vw;
     z-index: 100;
+    background:rgba(128,0,0,0.88);
 `;
 
 const Content = styled.div`
@@ -92,6 +97,8 @@ const Content = styled.div`
     margin: 0 auto;
     min-height: 100%;
     max-width: 1128px;
+    padding:0px;
+    background:rgba(128,0,0,0.1.5);
 `;
 
 const Logo = styled.span`

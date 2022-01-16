@@ -97,11 +97,7 @@ height:60px;
     top:0;
     justify-content: space-between;
     // flex-wrap: nowrap;
-<<<<<<< HEAD
-=======
-
->>>>>>> 25bd35c4a2706936a4d1a0fbb0814b429620a8ae
-    & > a {
+     > a {
         width: 135px;
         height: 34px;
         @media (max-width: 768px) {

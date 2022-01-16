@@ -14,6 +14,7 @@ const Container = styled.div`
 	z-index: 11;
 	background-color: rgba(0, 0, 0, 0.8);
 	animation: fadeIn 0.3s ease;
+	margin-top:3rem;
 `;
 
 const Content = styled.div`
